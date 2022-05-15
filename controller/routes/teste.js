@@ -12,9 +12,9 @@ app.get("/contato", function(req, resp){
 
 app.get("/produto", function(req, resp){
     resp.send("Página de produto do meu app");
-})
+});
 
-// esta sempre deve ser a ilyima linha quando usamos o express
+// esta sempre deve ser a ultima linha quando usamos o express
 app.listen(8081, function(){
     console.log("Servidor funcionando na url http://localhost:8081");
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,18 @@
     <title>Cadastro de Usuário</title>
 </head>
 <body>
-    <h1>Cadastro de Usuário</h1>
-    <form action="/cadastro/usuario/salvar" method="post">
-        <label>Nome:</label>
+    <h1>Cadastro de Usuário:</h1>
+    <form action="/cadastro/usuario/salvar" method="POST">
+        <label>Nome</label>
         <input name="nome" type="text"><br>
-        <label>Senha:</label>
+        <label>Senha</label>
         <input name="senha" type="password"><br>
         <input type="submit" value="cadastro">
     </form>
     <% if(mensagem) { %>
-        <p>
-            <label style="color: red;"><%= mensagem %></label>
-        </p>
-    <% } %>
+    <p>
+        <label style="color: red"><%= mensagem %></label>
+    </p>
+    <%}%>
 </body>
 </html>
